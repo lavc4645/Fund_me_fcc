@@ -1,0 +1,22 @@
+{
+  "name": "fund_me_fcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavcsss/Fund_me_fcc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lavcsss/Fund_me_fcc/issues"
+  },
+  "homepage": "https://github.com/lavcsss/Fund_me_fcc#readme",
+  "dependencies": {
+    "@chainlink/contracts": "^0.5.1"
+  }
+}
