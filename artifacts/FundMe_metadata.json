@@ -1,6 +1,10 @@
 {
 	"compiler": {
+<<<<<<< Updated upstream
 		"version": "0.8.17+commit.8df45f5f"
+=======
+		"version": "0.8.13+commit.abaa5c0e"
+>>>>>>> Stashed changes
 	},
 	"language": "Solidity",
 	"output": {
@@ -21,7 +25,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -91,11 +95,11 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x660684152eeff75930d7cbad62874776b27c51053ca02b883fd5d047bd29f539",
+			"keccak256": "0x530623b088c52851db60e04b50a6f821b717b249aa5d579e4d3e71c9c37520e0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9171d05d8d22524a252389e43d9398bc5e66cad4fe324017181977c16634a0c6",
-				"dweb:/ipfs/QmYDYqDUDLYavMKd683bTLTt81DgeEVtVGsJoP9xyQJf9N"
+				"bzz-raw://1ce6ef7f16357c4b94c57878c7a54cfab8e1b9afd90383a76eb1687101f2a74f",
+				"dweb:/ipfs/QmdhnDQ4UvoxkrLJhJomrnRoERehn23MjHPrZ16GT59hbV"
 			]
 		}
 	},

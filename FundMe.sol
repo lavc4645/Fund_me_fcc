@@ -37,12 +37,12 @@ contract FundMe {
         return uint256(priceInUSD * 1e10); //1e10 = 10000000000
     }
 
-    function convertEthAmountInUSD(uint256 ethAmount) public returns (uint256) {
+    function convertEthAmountInUSD(uint256 ethAmount) public view returns (uint256) {
         uint256 ethPrice = getETHPriceInUSD(); // 1087_000000000000000000
 
         /** (value to 1 ETH in USD) ethPrice => 1087_000000000000000000
          *  (total-no of ethers)    ethAmount =>   1_000000000000000000
-         * ethPrice * ethAmount  gives ==> 1e36
+         *  ethPrice * ethAmount  gives ==> 1e36
          *  Again convert '1e36' into '1e18' by dividing the whole no by '1e18'
          */
         uint256 ethAmountInUSD = (ethPrice * ethAmount) / 1e18;
