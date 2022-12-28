@@ -1,29 +1,10 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.8+commit.dddeac2f"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "ethAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "convertEthAmountInUSD",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
 			{
 				"inputs": [],
 				"name": "fund",
@@ -38,13 +19,38 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getETHPriceInUSD",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "fundAmount",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -58,11 +64,7 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"getETHPriceInUSD()": {
-					"notice": "Getting the current 1 ETH value in USD  from chainlink "
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
@@ -91,11 +93,19 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x660684152eeff75930d7cbad62874776b27c51053ca02b883fd5d047bd29f539",
+			"keccak256": "0x12a1732e041a5929574aa1b4b04913bb91a6fbddd7ff965af92b903ef2eb7234",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9171d05d8d22524a252389e43d9398bc5e66cad4fe324017181977c16634a0c6",
-				"dweb:/ipfs/QmYDYqDUDLYavMKd683bTLTt81DgeEVtVGsJoP9xyQJf9N"
+				"bzz-raw://3a4fe14899dba34062e4ac45321f351e4fed1a674bf24927de4242082c1ed5df",
+				"dweb:/ipfs/QmQzqEh33ADtK3Xh3d8ux34eAFCDAmNpxsyDx8zdZQYHCd"
+			]
+		},
+		"PriceConverter.sol": {
+			"keccak256": "0x0dfbe1861fa341f283cf1691e180ff21ec81152261b961deea7f8dfb85b5df8e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://73b19e0e932971d83f5c0e6d1dfe60341eacc81063bd16b49be5ca7649f424c3",
+				"dweb:/ipfs/Qme1abq1jVV1CXxYnvKvPw2wPzJBK1LCW8Fv8j1bT8qRox"
 			]
 		}
 	},
