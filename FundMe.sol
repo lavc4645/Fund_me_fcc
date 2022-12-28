@@ -7,6 +7,8 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 contract FundMe {
     /** Minimum value in USD which should be transferred */
     uint256 minimumUSD = 50 * 1e18; // 50_0000000000000000 (unit conversion)
+    address[] public funders; 
+    mapping (address => uint256) public fundAmount;
 
     function fund() public payable returns (bool) {
         /** Set minimum fund amount in USD
@@ -17,6 +19,8 @@ contract FundMe {
             convertEthAmountInUSD(msg.value) >= minimumUSD,
             "Don't send min amount"
         );
+        funders.push[msg.sender];
+        fundAmount[msg.sender] = msg.value;
         return true;
     }
 
